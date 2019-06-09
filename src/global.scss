@@ -9,3 +9,81 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+/* Custom styles*/
+
+.text-primary {
+    color: var(--ion-color-primary) !important;
+}
+
+.new-source-name {
+    font-size: 0.8rem;
+    color: lightgrey;
+}
+
+.action-dark, .action-sheet-group {
+    background-color: var(--ion-color-dark) !important;
+    color: white !important;
+}
+
+.action-dark ion-icon {
+    color: white !important;
+}
+
+.ios .action-dark-icon {
+    display: none !important;
+}
+
+.action-red, .action-sheet-group {
+    background-color: var(--ion-color-dark) !important;
+    color: red !important;
+}
+
+.action-red ion-icon {
+    color: red !important;
+}
+
+.ios .action-red-icon {
+    display: none !important;
+}
+
+.tab-selected {
+    color: var(--ion-color-primary) !important;
+}
+
+/* Animations */
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.animated.fast {
+    -webkit-animation-duration: 1000ms;
+    animation-duration: 1000ms;
+}
+
+@-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}

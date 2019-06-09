@@ -1,0 +1,18 @@
+<ion-card color="dark" class="animated fadeIn fast">
+  <ion-card-header>
+    <ion-card-subtitle>
+      <span class="text-primary">{{ indice + 1 }}. </span>
+      <span class="new-source-name">{{ new?.source?.name }}</span>
+      <div class="new-share">
+        <ion-button fill="clear" (click)="share()">
+          <ion-icon slot="icon-only" name="more"></ion-icon>
+        </ion-button>
+      </div>
+    </ion-card-subtitle>
+    <ion-card-title (click)="openInBrowser()">{{ new?.title }}</ion-card-title>
+  </ion-card-header>
+  <ion-img *ngIf="new?.urlToImage" (click)="openInBrowser()" [src]="new?.urlToImage"></ion-img>
+  <ion-card-content>
+    <p>{{ new?.description }}</p>
+  </ion-card-content>
+</ion-card>
