@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   apiKey: 'd8e0f661d9714ce0a748a1e388b743a0',
-  newsUrl: 'https://newsapi.org/'
+  newsUrl: 'https://newsapi.org/v2'
 };
 
 /*
